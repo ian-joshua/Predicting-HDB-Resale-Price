@@ -39,8 +39,8 @@ Upon employing a bivariate joint plot, the R2 was observed to be approximately 0
 
 Subsequently, a box and whisker plot comparing resale prices across various towns was employed. It can be observed in the following figures (Figure 2) that there are noticeable variations in median prices among different towns, with "Bukit Timah" exhibiting the highest median prices, followed by "Queenstown". On the other hand, "Ang Mo Kio" and "Yishun" emerge as the towns with the lowest median prices. This indicates that resale prices are influenced by the location of the house.
 
-<img width="214" alt="image" src="https://github.com/user-attachments/assets/e69f8570-5279-4245-b2c7-4deb9810d1b6">
-<img width="214" alt="image" src="https://github.com/user-attachments/assets/99484a92-df66-4dd3-b953-d280f11fe54f">
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/e69f8570-5279-4245-b2c7-4deb9810d1b6">
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/99484a92-df66-4dd3-b953-d280f11fe54f">
 
 Subsequently, a multiple linear regression model was employed to predict the resale prices. The next figure (Figure 3) illustrates a graph depicting the actual and predicted resale prices for the initial 250 samples from the multivariate prediction model. 
 
