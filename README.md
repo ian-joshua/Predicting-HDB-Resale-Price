@@ -33,22 +33,22 @@ Once the categorical data were converted into numerical format, they can be used
 Upon examination of the correlation matrix shown in the figure (Figure 1) below, it can be observed that the floor square area and resale prices exhibit the highest correlation coefficient of 0.6. While this value may not indicate a strong correlation, it signifies a moderate relationship between the two variables.  Given that the correlation between floor square area and resale prices is the highest, a bivariate joint plot was employed to assess its suitability for predicting resale prices based on floor square area.
 
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/5352d55d-60ec-4ac2-be02-452225ebfadf">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/5352d55d-60ec-4ac2-be02-452225ebfadf">
 
 Upon employing a bivariate joint plot, the R2 was observed to be approximately 0.369, suggesting that the model inadequately explains the variability of the response data around its mean, despite removing the outliers. Thus, it can be concluded that floor square area may not be a reliable predictor of the resale price.
 
 Subsequently, a box and whisker plot comparing resale prices across various towns was employed. It can be observed in the following figures (Figure 2) that there are noticeable variations in median prices among different towns, with "Bukit Timah" exhibiting the highest median prices, followed by "Queenstown". On the other hand, "Ang Mo Kio" and "Yishun" emerge as the towns with the lowest median prices. This indicates that resale prices are influenced by the location of the house.
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/e69f8570-5279-4245-b2c7-4deb9810d1b6">
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/99484a92-df66-4dd3-b953-d280f11fe54f">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/e69f8570-5279-4245-b2c7-4deb9810d1b6">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/99484a92-df66-4dd3-b953-d280f11fe54f">
 
 Subsequently, a multiple linear regression model was employed to predict the resale prices. The next figure (Figure 3) illustrates a graph depicting the actual and predicted resale prices for the initial 250 samples from the multivariate prediction model. 
 
-<img width="352" alt="image" src="https://github.com/user-attachments/assets/ea05cc1a-863d-4948-9998-6c6739d39377">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/ea05cc1a-863d-4948-9998-6c6739d39377">
 
 Additionally, a comparison graph was plotted to compare the predicted prices against the actual prices. In this graph, the red-dotted line represents a perfect prediction, where the predicted prices equal the actual prices(y=x), as shown below (Figure 4).
 
-<img width="179" alt="image" src="https://github.com/user-attachments/assets/534f1482-6018-4b7f-aac3-777bd5753c85">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/534f1482-6018-4b7f-aac3-777bd5753c85">
 
 The multiple linear regression model developed achieved a R2 value of 0.75, indicating a reasonably good fit of data. Additionally, the root mean square error (RMSE) of approximately $85,000 suggests that, on average, the model's predictions are within this margin of error from the actual resale prices. Thus, the model can be considered to be fairly accurate in its prediction of the resale prices. Furthermore, it should be noted that RMSE are sensitive to outliers.1 These outliers may be due to houses with abnormally high resale prices. 
 
@@ -58,10 +58,10 @@ To analyse the shortcomings of the linear regression model, it is crucial to und
 It was found that among the top 100 datasets with the largest absolute error, in terms of flat type, 58 of which were 5-room flats, and 23 were executive flats. In terms of town, 21 belonged to “Bukit Merah”, 13 to “Ang Mo Kio” and 12 to “Toa Payoh”. 
 Referring to the figures below (Figure 2 and Figure 5), these features consist of many outliers, and exhibit a box plot of large spread, or rather, variance.
 
-<img width="214" alt="image" src="https://github.com/user-attachments/assets/177b628f-207a-416d-b122-101008632ca0">
-<img width="213" alt="image" src="https://github.com/user-attachments/assets/a67cce67-bdaa-4f11-8eac-86d81cb4cd6a">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/177b628f-207a-416d-b122-101008632ca0">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/a67cce67-bdaa-4f11-8eac-86d81cb4cd6a">
 
-<img width="296" alt="image" src="https://github.com/user-attachments/assets/59b2581a-6c84-40f4-824d-cb0322527e08">
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/59b2581a-6c84-40f4-824d-cb0322527e08">
 
 ## Future Work
 To improve the accuracy of the prediction, other algorithms can be explored such as Random Forest and Extreme Gradient Boosting(XGBoost) can be explored. Additionally, outlier detection can be done to reduce the RMSE.
